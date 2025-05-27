@@ -5,3 +5,252 @@ cd - muda de diretorio
 ...
 
 
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop
+$ ls
+ 2025/                  Discord.lnk*      Programação/                               desktop.ini        powerMediation.pdf
+ Bitwarden.lnk*         INSTALIKE-BACK/   Signal.lnk*                                esta_reuniao.png   treino_halteres.pdf
+'Bizagi Modeler.lnk'*   Kindle.lnk*      'TCC - Saulo Alexandre Alves Texeira.pdf'   pagamentos/
+ DJO184.pdf             MicroSIP.lnk*     cache/                                     pendrive/
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop
+$ mkdir curso_git_2025
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop
+$ cd curso_git_2025/
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025
+$ ls
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025
+$ ls -a
+./  ../
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025
+$ ls
+teste.txt  teste2.txt
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025
+$ rm .
+rm: cannot remove '.': Is a directory
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025
+$ rm *.*
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025
+$ ls
+comandos_bash.txt
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025
+$
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025
+$ ls
+comandos_bash.txt
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025
+$ cat comandos_bash.txt
+ls - lista arquivos
+mkdir - cria pastas
+rm - remove arquivos
+cd - muda de diretorio
+...
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025
+$ vi comandos_bash.txt
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025
+$ git init .
+Initialized empty Git repository in C:/Users/ASUS-INTELIVIX/Desktop/curso_git_2025/.git/
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ cd .git/
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025/.git (GIT_DIR!)
+$ ls
+HEAD  config  description  hooks/  info/  objects/  refs/
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025/.git (GIT_DIR!)
+$ cd ..
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ ls
+comandos_bash.txt
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ ls -a
+./  ../  .git/  comandos_bash.txt
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ rm -h
+rm: unknown option -- h
+Try 'rm --help' for more information.
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ rm --help
+Usage: rm [OPTION]... [FILE]...
+Remove (unlink) the FILE(s).
+
+  -f, --force           ignore nonexistent files and arguments, never prompt
+  -i                    prompt before every removal
+  -I                    prompt once before removing more than three files, or
+                          when removing recursively; less intrusive than -i,
+                          while still giving protection against most mistakes
+      --interactive[=WHEN]  prompt according to WHEN: never, once (-I), or
+                          always (-i); without WHEN, prompt always
+      --one-file-system  when removing a hierarchy recursively, skip any
+                          directory that is on a file system different from
+                          that of the corresponding command line argument
+      --no-preserve-root  do not treat '/' specially
+      --preserve-root[=all]  do not remove '/' (default);
+                              with 'all', reject any command line argument
+                              on a separate device from its parent
+  -r, -R, --recursive   remove directories and their contents recursively
+  -d, --dir             remove empty directories
+  -v, --verbose         explain what is being done
+      --help     display this help and exit
+      --version  output version information and exit
+
+By default, rm does not remove directories.  Use the --recursive (-r or -R)
+option to remove each listed directory, too, along with all of its contents.
+
+To remove a file whose name starts with a '-', for example '-foo',
+use one of these commands:
+  rm -- -foo
+
+  rm ./-foo
+
+Note that if you use rm to remove a file, it might be possible to recover
+some of its contents, given sufficient expertise and/or time.  For greater
+assurance that the contents are truly unrecoverable, consider using shred.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/rm>
+or available locally via: info '(coreutils) rm invocation'
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ rm -r .git/
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025
+$ ls
+comandos_bash.txt
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025
+$ git init .
+Initialized empty Git repository in C:/Users/ASUS-INTELIVIX/Desktop/curso_git_2025/.git/
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ ls
+comandos_bash.txt
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ ls -a
+./  ../  .git/  comandos_bash.txt
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ ^C
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        comandos_bash.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git add comandos_bash.txt
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   comandos_bash.txt
+
+
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git commit - m "primeiros comandos bash"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'primeiros comandos bash' did not match any file(s) known to git
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git config --global user.email "saulo.teixeira@gmail.com"
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git commit - m "primeiros comandos bash"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'primeiros comandos bash' did not match any file(s) known to git
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git commit -m "primeiros comandos bash"
+[main (root-commit) 1204e65] primeiros comandos bash
+ 1 file changed, 154 insertions(+)
+ create mode 100644 comandos_bash.txt
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git config --global user.name "Saulo Teixeira"
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git config --global user.email
+saulo.teixeira@gmail.com
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git config --global user.name
+Saulo Teixeira
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   comandos_bash.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git commit -m "primeiros comandos bash"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   comandos_bash.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   comandos_bash.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git add comandos_bash.txt
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git commit -m "primeiros comandos bash"
+[main bb4c749] primeiros comandos bash
+ 1 file changed, 147 deletions(-)
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+

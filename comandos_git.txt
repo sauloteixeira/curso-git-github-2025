@@ -1,0 +1,66 @@
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git commit - m "primeiros comandos bash"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'primeiros comandos bash' did not match any file(s) known to git
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git config --global user.email "saulo.teixeira@gmail.com"
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git commit - m "primeiros comandos bash"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'primeiros comandos bash' did not match any file(s) known to git
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git commit -m "primeiros comandos bash"
+[main (root-commit) 1204e65] primeiros comandos bash
+ 1 file changed, 154 insertions(+)
+ create mode 100644 comandos_bash.txt
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git config --global user.name "Saulo Teixeira"
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git config --global user.email
+saulo.teixeira@gmail.com
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git config --global user.name
+Saulo Teixeira
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   comandos_bash.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git commit -m "primeiros comandos bash"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   comandos_bash.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   comandos_bash.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+git init .	-->
+git status	-->
+git add nome_arquivo	-->
+git commit -m "nome_do_save"	-->
