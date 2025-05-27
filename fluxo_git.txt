@@ -1,0 +1,12 @@
+## FLUXO DE TRABALHO NO GIT
+
+1. criar o diretório do projeto
+2. iniciar o git dentro do diretório criado (git init .)
+3. edita ou cria arquivos
+4. git status
+5. git add [nome do arquivo] / git add . (para a pasta inteira)
+6. git status
+7. git commit -m "mensagem"
+8. git status
+9. git log
+10. volta pro passo 3
