@@ -10,3 +10,5 @@
 8. git status
 9. git log
 10. volta pro passo 3
+
+show

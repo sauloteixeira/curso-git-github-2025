@@ -1,131 +1,26 @@
+git init .
+  ativa o git na pasta corrente
 
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git commit - m "primeiros comandos bash"
-error: pathspec '-' did not match any file(s) known to git
-error: pathspec 'm' did not match any file(s) known to git
-error: pathspec 'primeiros comandos bash' did not match any file(s) known to git
+git status
+  mostra o status do git e dos arquivos na pasta
+  
+git add NOME_DO_ARQUIVO
+  adiciona o arquivo a lista de arquivos "comitáveis"
 
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git config --global user.email "saulo.teixeira@gmail.com"
+git commit -m "NOME_DO_COMMIT"
+  cria commit nos arquivos adicionados com o nome escolhido
 
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git commit - m "primeiros comandos bash"
-error: pathspec '-' did not match any file(s) known to git
-error: pathspec 'm' did not match any file(s) known to git
-error: pathspec 'primeiros comandos bash' did not match any file(s) known to git
+git config --global user.email "saulo.teixeira@gmail.com"
+  configura o e-mail do responsavel
 
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git commit -m "primeiros comandos bash"
-[main (root-commit) 1204e65] primeiros comandos bash
- 1 file changed, 154 insertions(+)
- create mode 100644 comandos_bash.txt
+git config --global user.name "Saulo Teixeira"
+  configura o nome do responsavel
 
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git config --global user.name "Saulo Teixeira"
+git config --global user.email
+  informa o email cadastrado
 
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git config --global user.email
-saulo.teixeira@gmail.com
+git config --global user.name
+  informa o nome cadastrado
 
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git config --global user.name
-Saulo Teixeira
-
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git status
-On branch main
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   comandos_bash.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git commit -m "primeiros comandos bash"
-On branch main
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   comandos_bash.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git status
-On branch main
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   comandos_bash.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-git init .	-->
-git status	-->
-git add nome_arquivo	-->
-git commit -m "nome_do_save"	-->
-
-
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git status
-On branch main
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   comandos_bash.txt
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        comandos_git.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git add comandos_bash.txt
-
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git add comandos_git.txt
-warning: in the working copy of 'comandos_git.txt', LF will be replaced by CRLF the next time Git touches it
-
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git status
-On branch main
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        modified:   comandos_bash.txt
-        new file:   comandos_git.txt
-
-
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git commit -m "novos comandos bash e primeiros comandos git"
-[main 6233214] novos comandos bash e primeiros comandos git
- 2 files changed, 315 insertions(+)
- create mode 100644 comandos_git.txt
-
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git status
-On branch main
-nothing to commit, working tree clean
-
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$ git log
-commit 6233214f82dc78ae88ef91e8a4fcc3c7553b833c (HEAD -> main)
-Author: Saulo Teixeira <saulo.teixeira@gmail.com>
-Date:   Mon May 26 21:15:04 2025 -0300
-
-    novos comandos bash e primeiros comandos git
-
-commit bb4c7494db0617707b0b2f0163baa22bf41854c4
-Author: Saulo Teixeira <saulo.teixeira@gmail.com>
-Date:   Mon May 26 21:00:16 2025 -0300
-
-    primeiros comandos bash
-
-commit 1204e655b6da3449610f3d5505bfd11eacd911fb
-Author: unknown <saulo.teixeira@gmail.com>
-Date:   Mon May 26 20:57:05 2025 -0300
-
-    primeiros comandos bash
-
-ASUS-INTELIVIX@SAULOTEIXEIRA MINGW64 ~/Desktop/curso_git_2025 (main)
-$
+git log
+  informa o log dos commits salvos
