@@ -24,3 +24,13 @@ git config --global user.name
 
 git log
   informa o log dos commits salvos
+
+git checkout -b NOME_DA_BRANCH
+  cria uma brunch secundaria (-b)
+  -b para quando a branch que nao existe
+
+git checkout main
+  volta pra branch main
+
+git checkout NOME_DA_BRANCH
+  volta pra branch escolhida
